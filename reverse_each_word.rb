@@ -8,12 +8,10 @@ def reverse_each_word(string)
 end
 
 def reverse_each_word(string)
-  x = -1
   new_string = ""
   array_string = string.split
   array_string.collect do |word|
-    new_string << " #{array_string[x]}"
-    x -= 1
+    new_string << " #{word.reverse}"
   end
   return new_string
 end
