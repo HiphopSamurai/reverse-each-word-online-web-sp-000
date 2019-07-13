@@ -6,5 +6,5 @@ def reverse_each_word(string)
     new_string << " #{array_string[x]}"
     x -= 1
   end
-  puts new_string
+  return new_string
 end
